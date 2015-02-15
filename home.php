@@ -6,43 +6,80 @@
  */
 get_header(); ?>
 
+<?php
+/* Declare Variables for Images via ACF */
+	$image;
+	$img_url = $image['url'];
+	$img_alt = $image['alt'];
+	$img_sm = $image['sizes'][ 'thumbnail' ];
+	$img_md = $image['sizes'][ 'medium' ];
+	$img_lg = $image['sizes'][ 'large' ];
+	$img_xl = $image['sizes'][ 'original' ];
+
+	?>
+
+<?php $image = get_field('jumbotron_image'); ?>
 	<figure class="welcome jumbotron">
-		<img src="img/banner1.jpg" alt="">
+		<img  size="100vw" 
+					srcset="<?php echo $img_thumb; ?> 768w, 
+									<?php echo $img_md; ?> 992w, 
+									<?php echo $img_lg; ?> 1024w, 
+									<?php echo $img_xl; ?> 1200w" 
+					alt="<?php echo $img_alt; ?>" >
 		<image src="img/design_logo.svg" class="logo">
 		<figcaption class="blurb">
-			<h6>The Myers School of Art at The University of Akron</h6>
-			<p></p>
+			<h6><?php the_field('jumbotron_title'); ?></h6>
+			<p><?php the_field('jumbotron_text'); ?></p>
 		</figcaption>
 	</figure>
 
 	<section class="info jumbotron">
-		<img src="img/banner3.jpg" alt="">
+
+	<?php $image = get_field('home_information_image'); ?>
+
+		<img  size="100vw" 
+					srcset="<?php echo $img_thumb; ?> 768w, 
+									<?php echo $img_md; ?> 992w, 
+									<?php echo $img_lg; ?> 1024w, 
+									<?php echo $img_xl; ?> 1200w" 
+					alt="<?php echo $img_alt; ?>" >
+
 		<a href="info.html">
 			<div class="blurb info col-xs-12 col-sm-6 col-md-4">
-				<h4 class="titles">INFORMATION</h4>
-				<p> With smaller class sizes and higher placement rates, come see what the Design program at the Myers School of Art has to offer.
-				</p>
+				<h4 class="titles"><?php the_field('home_information_title'); ?></h4>
+				<p><?php the_field('home_information_text'); ?></p>
 			</div>
 		</a>
 	</section>
 
 	<section class="events jumbotron">
-		<img src="img/designwall.jpg" alt="">
+	<?php $image = get_field('home_events_image'); ?>
+		<img  size="100vw" 
+					srcset="<?php echo $img_thumb; ?> 768w, 
+									<?php echo $img_md; ?> 992w, 
+									<?php echo $img_lg; ?> 1024w, 
+									<?php echo $img_xl; ?> 1200w" 
+					alt="<?php echo $img_alt; ?>" >
 		<a href="events.html">
 			<div class="blurb events col-xs-12 col-sm-6 col-md-4">
-				<h4 class="titles">EVENTS</h4>
-				<p> Every semester our award winning students show cases their design work free to the public.
-				</p>
+				<h4 class="titles"><?php the_field('home_events_title'); ?></h4>
+				<p><?php the_field('home_events_text'); ?></p>
 			</div>
 		</a>
 	</section>
 
 	<section id="contact" class="contact jumbotron">
-		<img src="img/ajheaderimg.jpg" alt="">
+	<?php $image = get_field('home_contact_image'); ?>
+		<img  size="100vw" 
+					srcset="<?php echo $img_thumb; ?> 768w, 
+									<?php echo $img_md; ?> 992w, 
+									<?php echo $img_lg; ?> 1024w, 
+									<?php echo $img_xl; ?> 1200w" 
+					alt="<?php echo $img_alt; ?>" >
 		<a href="contact.html">
 			<div class="blurb contact col-xs-12 col-sm-6 col-md-4">
-				<h4 class="titles">CONTACT</h4>
-				<p> We invite you to experience the Myers School of art and set up a visitation.</p>
+				<h4 class="titles"><?php the_field('home_contact_title'); ?></h4>
+				<p><?php the_field('home_contact_text'); ?></p>
 			</div>
 		</a>
 	</section>
