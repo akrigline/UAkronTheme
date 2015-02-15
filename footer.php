@@ -7,19 +7,49 @@
  * @package UAkronDesign
  */
 ?>
+  <footer>
+    <div class="container">
+      <address class="col-xs-12 col-sm-3 col-xl-3">
+        <p>Myers School of Art<br>
+        150 E Exchange St.<br>
+        University of Akron Folk Hall<br>
+        Akron, OH 44325</p>
+      </address>
+      <div class="col-xs-12 col-sm-5 col-xl-3">
+        <p>
+          Contact Info:<br>
+          330.972.6030<br>
+          ua.art@uakron.edu<br>
+          <a href="https://www.uakron.edu/admissions/undergraduate/who-are-you/index.dot"> Apply </a> / 
+          <a href="https://www.uakron.edu/about_ua/visiting/"> Schedule a Visit </a> / 
+          <a href="https://www.uakron.edu/admissions/undergraduate/contact-us/index.dot"> Contact Admissions </a> /
+          <a href="https://www.uakron.edu/development/"> Support Myers </a>
+        </p>
+      </div>
+      <div class="col-xs-12 col-sm-4 col-xl-3">
+        <a href="http://uakron.edu"><img src="<?php bloginfo('template_directory'); ?>/img/uakron_logo.svg" class="uaLogo" alt=""></a>
+        <small>The University of Akron is an Equal Education and Emploment Institution. &copy; 2015</small>
+      </div>
+    </div>
+  </footer>
+    
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
 
-	</div><!-- #content -->
+  <script src="<?php bloginfo('template_directory'); ?>/js/vendor/bootstrap.min.js"></script>
 
-	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'uakrondesign' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'uakrondesign' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( __( 'Theme: %1$s by %2$s.', 'uakrondesign' ), 'UAkronDesign', '<a href="http://underscores.me/" rel="designer">Underscores.me</a>' ); ?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
-</div><!-- #page -->
+  <script src="<?php bloginfo('template_directory'); ?>/js/main.js"></script>
 
-<?php wp_footer(); ?>
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+  <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+  </script>
 
+  <?php wp_footer(); ?>
 </body>
 </html>

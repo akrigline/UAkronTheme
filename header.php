@@ -22,8 +22,7 @@
 	
 	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,700,400italic' rel='stylesheet' type='text/css'>
 
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/bootstrap.min.css">
 
 
   <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
@@ -32,7 +31,6 @@
 
 
 <body <?php body_class(); ?>>
-
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 			<button class="menu-toggle" aria-controls="menu" aria-expanded="false"><?php _e( 'Primary Menu', 'uakrondesign' ); ?></button>
