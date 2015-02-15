@@ -24,6 +24,12 @@
 
 	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/bootstrap.min.css">
 
+<?php if ( is_page('info') ) : ?>
+
+	<link rel="stylesheet" href="css/odometer-theme-default.css" />
+	<script src="js/vendor/odometer.js"></script>
+
+<? endif; ?>
 
   <script src="<?php bloginfo('template_directory'); ?>/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
   <script src="<?php bloginfo('template_directory'); ?>/js/vendor/picturefill.min.js"></script>
