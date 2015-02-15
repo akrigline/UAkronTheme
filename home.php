@@ -41,7 +41,7 @@ get_header(); ?>
 
 	<section class="info jumbotron">
 
-	<?php $image = get_field('home_information_image'); ?>
+  	<?php $image = get_field('home_information_image'); ?>
 
 		<img  size="100vw" 
 					srcset="<?php echo $srcset; ?>" 
@@ -56,7 +56,7 @@ get_header(); ?>
 	</section>
 
 	<section class="events jumbotron">
-	<?php $image = get_field('home_events_image'); ?>
+  	<?php $image = get_field('home_events_image'); ?>
 		<img  size="100vw" 
 					srcset="<?php echo $srcset; ?>" 
 					alt="<?php echo $img_alt; ?>" >
@@ -69,7 +69,7 @@ get_header(); ?>
 	</section>
 
 	<section id="contact" class="contact jumbotron">
-	<?php $image = get_field('home_contact_image'); ?>
+  	<?php $image = get_field('home_contact_image'); ?>
 		<img  size="100vw" 
 					srcset="<?php echo $srcset; ?>" 
 					alt="<?php echo $img_alt; ?>" >

@@ -16,6 +16,7 @@ get_header(); ?>
 	$img_lg = $image['sizes'][ 'large' ];
 	$img_xl = $image['sizes'][ 'original' ];
 
+  $srcset = $img_sm . " 768w, " . $img_md . " 992w, " . $img_lg . " 1024w, " . $img_xl . " 1200w";
 	?>
 
 
@@ -24,10 +25,7 @@ get_header(); ?>
     <?php $image = get_field('jumbotron_image'); ?>
   	<figure class="welcome jumbotron">
   		<img  size="100vw" 
-  					srcset="<?php echo $img_thumb; ?> 768w, 
-  									<?php echo $img_md; ?> 992w, 
-  									<?php echo $img_lg; ?> 1024w, 
-  									<?php echo $img_xl; ?> 1200w" 
+  					srcset="<?php echo $srcset; ?>" 
   					alt="<?php echo $img_alt; ?>" >
   		<image src="img/design_logo.svg" class="logo">
   		<figcaption class="blurb">

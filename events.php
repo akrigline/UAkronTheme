@@ -1,4 +1,4 @@
-<?php /* Template Name: Information */ ?>
+<?php /* Template Name: Events */ ?>
 
 <?php
 /**

@@ -17,7 +17,7 @@
 	      <?php while ( have_posts() ) : the_post(); ?>
 		      <figure class="event col-xs-6">
 						<?php $image = get_field('event_image'); ?>
-		    		<img  size="100vw" 
+		    		<img  size="50vw, 50vw, 35vw" 
 									srcset="<?php echo $srcset; ?>" 
 									alt="<?php echo $img_alt; ?>" >
 		      
@@ -41,7 +41,7 @@
 	      <?php while ( have_posts() ) : the_post(); ?>
 		      <figure class="event col-xs-6">
 						<?php $image = get_field('event_image'); ?>
-		    		<img  size="100vw" 
+		    		<img  size="50vw, 50vw, 35vw" 
 									srcset="<?php echo $srcset; ?>" 
 									alt="<?php echo $img_alt; ?>" >
 		      
@@ -68,7 +68,10 @@
     	<dl>
 	      <?php while ( have_posts() ) : the_post(); ?>
 	      	<dt><?php the_title(); ?></dt>
-		      <dd><?php the_field('event_date'); ?></dd>
+		      <dd>
+		      	<?php the_field('event_date_open'); ?>
+		      	<?php if ( get_field('event_date_close') ) : echo " - " . the_field('event_date_close'); ?>
+		      </dd>
 	      <?php endwhile; ?>
       </dl>
     <?php else : ?>
