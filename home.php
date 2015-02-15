@@ -16,6 +16,8 @@ get_header(); ?>
 	$img_lg = $image['sizes'][ 'large' ];
 	$img_xl = $image['sizes'][ 'original' ];
 
+  $srcset = $img_sm . " 768w, " . $img_md . " 992w, " . $img_lg . " 1024w, " . $img_xl . " 1200w";
+
 	?>
 
 <?php if ( have_posts() ) : ?>
@@ -23,10 +25,7 @@ get_header(); ?>
     <?php $image = get_field('jumbotron_image'); ?>
   	<figure class="welcome jumbotron">
   		<img  size="100vw" 
-  					srcset="<?php echo $img_thumb; ?> 768w, 
-  									<?php echo $img_md; ?> 992w, 
-  									<?php echo $img_lg; ?> 1024w, 
-  									<?php echo $img_xl; ?> 1200w" 
+  					srcset="<?php echo $srcset; ?>" 
   					alt="<?php echo $img_alt; ?>" >
   		<image src="img/design_logo.svg" class="logo">
   		<figcaption class="blurb">
@@ -45,10 +44,7 @@ get_header(); ?>
 	<?php $image = get_field('home_information_image'); ?>
 
 		<img  size="100vw" 
-					srcset="<?php echo $img_thumb; ?> 768w, 
-									<?php echo $img_md; ?> 992w, 
-									<?php echo $img_lg; ?> 1024w, 
-									<?php echo $img_xl; ?> 1200w" 
+					srcset="<?php echo $srcset; ?>" 
 					alt="<?php echo $img_alt; ?>" >
 
 		<a href="info.html">
@@ -62,10 +58,7 @@ get_header(); ?>
 	<section class="events jumbotron">
 	<?php $image = get_field('home_events_image'); ?>
 		<img  size="100vw" 
-					srcset="<?php echo $img_thumb; ?> 768w, 
-									<?php echo $img_md; ?> 992w, 
-									<?php echo $img_lg; ?> 1024w, 
-									<?php echo $img_xl; ?> 1200w" 
+					srcset="<?php echo $srcset; ?>" 
 					alt="<?php echo $img_alt; ?>" >
 		<a href="events.html">
 			<div class="blurb events col-xs-12 col-sm-6 col-md-4">
@@ -78,10 +71,7 @@ get_header(); ?>
 	<section id="contact" class="contact jumbotron">
 	<?php $image = get_field('home_contact_image'); ?>
 		<img  size="100vw" 
-					srcset="<?php echo $img_thumb; ?> 768w, 
-									<?php echo $img_md; ?> 992w, 
-									<?php echo $img_lg; ?> 1024w, 
-									<?php echo $img_xl; ?> 1200w" 
+					srcset="<?php echo $srcset; ?>" 
 					alt="<?php echo $img_alt; ?>" >
 		<a href="contact.html">
 			<div class="blurb contact col-xs-12 col-sm-6 col-md-4">

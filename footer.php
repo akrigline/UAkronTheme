@@ -5,6 +5,8 @@
  * @package UAkronDesign
  */
 ?>
+  
+  <div class="pseudofooter"></div>
   <footer>
     <div class="container">
       <address class="col-xs-12 col-sm-3 col-xl-3">

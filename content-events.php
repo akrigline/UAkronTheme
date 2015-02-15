@@ -18,10 +18,7 @@
 		      <figure class="event col-xs-6">
 						<?php $image = get_field('event_image'); ?>
 		    		<img  size="100vw" 
-									srcset="<?php echo $img_thumb; ?> 768w, 
-													<?php echo $img_md; ?> 992w, 
-													<?php echo $img_lg; ?> 1024w, 
-													<?php echo $img_xl; ?> 1200w" 
+									srcset="<?php echo $srcset; ?>" 
 									alt="<?php echo $img_alt; ?>" >
 		      
 		        <figcaption class="row">
@@ -45,10 +42,7 @@
 		      <figure class="event col-xs-6">
 						<?php $image = get_field('event_image'); ?>
 		    		<img  size="100vw" 
-									srcset="<?php echo $img_thumb; ?> 768w, 
-													<?php echo $img_md; ?> 992w, 
-													<?php echo $img_lg; ?> 1024w, 
-													<?php echo $img_xl; ?> 1200w" 
+									srcset="<?php echo $srcset; ?>" 
 									alt="<?php echo $img_alt; ?>" >
 		      
 		        <figcaption class="row">
