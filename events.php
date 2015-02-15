@@ -35,21 +35,14 @@ get_header(); ?>
 
   <section class="container-fluid">
 
-  <?php query_posts( 'category_name=events&year=2015' ); ?>
-
-    <?php if ( have_posts() ) : ?>
-      <?php while ( have_posts() ) : the_post(); ?>
+  <?php $year = date('Y');
+    while ($year >= 2012) : ?>
 
         <?php get_template_part( 'content', 'events' ); ?>
 
-      <?php endwhile; ?>
-    <?php else : ?>
+        $year--;
 
-      <?php get_template_part( 'content', 'none' ); ?>
-
-    <?php endif; ?>
-
-  <?php wp_reset_query(); ?>
+  <?php endwhile; ?>
 
   </section><!-- container -->
 
