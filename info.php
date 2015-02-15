@@ -50,6 +50,7 @@ get_header(); ?>
 
 		<?php endif; ?>
 	</div><!-- content -->
+
 	<div class="col-xs-12 col-sm-6 col-md-5 pull-right quickStats">
 		<div class="row">
   		<div class="col-xs-12 col-lg-6">
@@ -81,5 +82,6 @@ get_header(); ?>
 	  		<h3>Year Established</h3>
   		</div>
 		</div>
-  </div>
+  </div><!-- quickStats -->
+  
 <?php get_footer(); ?>
