@@ -24,7 +24,8 @@ get_header(); ?>
   <?php while ( have_posts() ) : the_post(); ?>
     <?php $image = get_field('jumbotron_image'); ?>
   	<figure class="welcome jumbotron">
-  		<img  size="100vw" 
+  		<img  src="<?php echo $img_url; ?>"
+            size="100vw" 
   					srcset="<?php echo $srcset; ?>" 
   					alt="<?php echo $img_alt; ?>" >
   		<image src="img/design_logo.svg" class="logo">
@@ -33,12 +34,6 @@ get_header(); ?>
   			<p><?php the_field('jumbotron_text'); ?></p>
   		</figcaption>
   	</figure>
-  <?php endwhile; ?>
-
-<?php else : ?>
-
-<?php endif; ?>
-
 	<section class="info jumbotron">
 
   	<?php $image = get_field('home_information_image'); ?>
@@ -80,5 +75,11 @@ get_header(); ?>
 			</div>
 		</a>
 	</section>
+
+  <?php endwhile; ?>
+
+<?php else : ?>
+
+<?php endif; ?>
 
 <?php get_footer(); ?>
