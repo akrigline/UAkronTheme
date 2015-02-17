@@ -1,19 +1,11 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,700,400italic);
 /*
-Theme Name: UAkronDesign
-Theme URI: http://uakrondesign.com/
-Author: Creative Folk
-Author URI: http://creative-folk.com
-Description: Website Theme for University of Akron's Design School
-Version: 1.0.0
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: uakrondesign
-Tags:
-
-This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned with others.
-
-UAkronDesign is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
+Theme Name: University of Akron Graphic Design
+Theme URI: University of Akron Graphic Design
+Description: Theme specifically designed for use by The University of Akron Myer's School of Art Design Program
+Author: Skylar Wuebker & Andrew Krigline
+Version: 1.0
+Author URI: Skylar Wuebker & Andrew Krigline 
 */
 
 html,body{
@@ -22,16 +14,17 @@ html,body{
 
 /* Navigation */
 .nav {
-	height:60px;
-	width:100%;
 	background-color:#002532;
 }
 
 .nav li {
 	float:left;
-	padding:1.28em;
-	font-size: 1.1em;
+  margin-right: 2.2em;
+	font-size: 1.4em;
 	list-style: none;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+  letter-spacing: .12em;
 }
 
 .nav a{
@@ -39,10 +32,59 @@ html,body{
 	text-decoration: none;
 }
 
-.nav a:hover{
+.navbar {
+  margin-bottom: 0;
+}
+
+.nav li a:hover{
+  background:transparent; 
 	color:#FFF;
 	transition:300ms;
 }
+
+.brand {
+  margin-top:.8em;
+  margin-right: 2em;
+}
+
+.icon-bar {
+  color:#7DC247;
+}
+
+.brand {
+  display: inline;
+}
+
+.nav img {
+  height:25px;
+  padding:0;
+}
+
+nav .container-fluid {
+  padding-left:1em;
+  padding-right:0;
+  background-color:#002532;
+}
+
+.navbar-toggle{
+  background:rgb(55,55,55);
+}
+
+.navbar-toggle.collapsed{
+  background: #002532;
+}
+
+.navbar-toggle .icon-bar{
+  background:#fff;
+  height:3px;
+}
+
+.navbar-nav+li{display:none;}
+
+dl {
+  margin-bottom:2.5em;
+}
+
 
 /* Footer */
 footer {
@@ -52,12 +94,13 @@ footer {
   width:100%;
 }
 
+
 @media screen and (min-width:768px){
   section{
     background:#fff;
   }
-  section:last-of-type{
-    margin-bottom:10em;
+  .pseudofooter{
+    height:10em;
   }
   footer{
     position:fixed;
@@ -68,6 +111,7 @@ footer {
 
 footer small{
   color:#ccc;
+  text-align: center;
 }
 
 .uaLogo{
@@ -180,7 +224,7 @@ a {
 	color: #7DC247;
 }
 a:hover {
-	color: #002532;
+	color: #FFF;
 	text-decoration: none;
 }
 
@@ -203,19 +247,48 @@ HOME PAGE
 .jumbotron{
 	height:90%;
 	width: 100%;
+  background-color: #002532;
 	overflow: hidden;
 	padding:0;
 	margin:0;
 	position: relative;
+  max-height:1000px;
+}
+.jumbotron .imagePanner{
+  display:block;
+  width:100%;
+  height:100%;
+  position: relative;
 }
 
-.jumbotron img{
-	position:absolute;
-	height:100%;
+.jumbotron .panning{
+  display:block;
+	height:102%;
+  width:102%;
 }
 
-.logo{
-	width:100%;
+/* !FOCUSED IMAGES */
+/*-----------------------------------------*/
+.focuspoint {
+  position: relative; /*Any position but static should work*/
+  overflow: hidden;
+  width:100%;
+  height:100%;
+}
+.focuspoint img {
+  /* fill and maintain aspect ratio */
+  width: auto; height: auto;
+  min-width: 100%; min-height: 100%;
+  max-height: none; max-width: none;
+  position:absolute;
+}
+
+figcaption {
+  width:100%;
+}
+
+.jumbotron p {
+  color: #FFF;
 }
 
 .welcome{
@@ -235,12 +308,56 @@ HOME PAGE
 position: absolute;
 }
 
+.blurb h4 {
+  text-align: left;
+}
+
+section.jumbotron .blurb {
+  bottom:10em;
+  left: 5em;
+}
+
+figcaption h6 {
+  text-align: right;
+  color: #FFF;
+  font-size: 2.6em;
+  font-family: 'Opens Sans' sans-serif;
+  font-weight: 300;
+  position: relative;
+  margin-top: -21em;
+  margin-right: .6em;
+
+}
+
+@media screen and (min-width:768px) {
+
+  section.jumbotron .blurb {
+    opacity: 0;
+    transition: all 600ms;
+  }
+
+  section.jumbotron img {
+    opacity: 1;
+    transition:all 300ms;
+  }
+
+  section.jumbotron:hover .blurb {
+    opacity: 1;
+  }
+
+  section.jumbotron:hover img {
+    opacity: .6;
+  }
+}
+
+
 /*--------------------------
 INFO PAGE 
 -----------*/
 .page {
 	height:60%;
 	width: 100%;
+  position: relative;
 }
 
 .page h4 {
@@ -249,11 +366,18 @@ INFO PAGE
 	font-weight: 500;
 	color:#FFF;
 	text-align: left;
-	margin-top:1.4em;
+	margin-top:-7.4em;
+  position: absolute;
+}
+
+.page img {
+  min-height: 100%;
+  min-width: 100%;
 }
 
 .quickStats {
   padding-top: 2em;
+  text-align: center;
 }
 
 .content h1 {
@@ -339,13 +463,62 @@ CONTACT PAGE
   z-index:80;
 }
 
+.contactContent {
+  padding-top:2em;
+  padding-bottom:4em;
+}
 
+.contactContent h1{
+  font-size: 2.4em;
+  font-weight: 400;
+  color: #7DC247;
+  padding-top: .2em;
+  padding-bottom: .2em;
+  border-bottom: 1px solid #7DC247;
+}
 
 @media screen and (min-width:768px){
   .event,
   .embed-responsive{
-    padding-top:38%;
+    padding-top:25%;
   }
+}
+
+
+/* Media Queries */
+
+@media screen and (max-width: 992px) {
+
+  .nav li {
+    margin-right:0;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+
+  .blurb {
+    text-align: center;
+    width: 100%;
+    padding-left:0;
+  }
+
+  .blurb h4, .page h4 {
+    font-size: 4em;
+    text-align: center;
+  }
+
+  section.jumbotron .blurb {
+    left:0;
+    bottom:30%;
+    top:30%;
+    padding-left:.8em;
+  }
+
+  section.jumbotron img {
+    opacity: .6;
+  }
+
 }
 
 /**************************************
