@@ -24,19 +24,43 @@
 
 	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/bootstrap.min.css">
 
-<?php if ( is_page('info') ) : ?>
+	<?php if ( is_page('info') ) : ?>
 
-	<link rel="stylesheet" href="css/odometer-theme-default.css" />
-	<script src="js/vendor/odometer.js"></script>
+		<link rel="stylesheet" href="css/odometer-theme-default.css" />
+		<script src="js/vendor/odometer.js"></script>
 
-<? endif; ?>
+	<? endif; ?>
 
-  <script src="<?php bloginfo('template_directory'); ?>/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-  <script src="<?php bloginfo('template_directory'); ?>/js/vendor/picturefill.min.js"></script>
+	<script src="<?php bloginfo('template_directory'); ?>/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+	<script src="<?php bloginfo('template_directory'); ?>/js/vendor/picturefill.min.js"></script>
 	<?php wp_head(); ?>
 </head>
 
 
 <body <?php body_class(); ?>>
+	<div class="nav">
+		<nav class="navbar top-nav" role="navigation">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header pull-left">
+					<button type="button" class="navbar-toggle collapsed pull-left" data-toggle="collapse" data-target="#navbar-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
 
-			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+				<div class="pull-right brand"><a href="index.html"><img src="img/design_logo.svg"></a></div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+					<?php wp_nav_menu( 
+						array( 'theme_location' => 'primary',
+										'container' => 'div',
+										'container_class' => 'container collapse navbar-collapse',
+										'container_id' => 'navbar-collapse',
+										'menu_class' => 'nav navbar-nav navbar-left' ) 
+					); ?>
+			</div><!-- /.container-fluid -->
+		</nav>
+	</div>
