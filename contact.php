@@ -23,7 +23,7 @@ get_header(); ?>
 <?php if ( have_posts() ) : ?>
   <?php while ( have_posts() ) : the_post(); ?>
     <?php $image = get_field('jumbotron_image'); ?>
-  	<figure class="welcome jumbotron">
+  	<figure class="pageHeader jumbotron">
   		<img  size="100vw" 
   					srcset="<?php echo $srcset; ?>" 
   					alt="<?php echo $img_alt; ?>" >
