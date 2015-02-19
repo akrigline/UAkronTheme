@@ -6,32 +6,12 @@
  */
 get_header(); ?>
 
+
+<?php get_template_part( 'content', 'jumbotron' ); ?>
+
 <?php if ( have_posts() ) : ?>
   <?php while ( have_posts() ) : the_post(); ?>
-    
-    <?php $image = get_field('jumbotron_image');
-      /* Declare Variables for Images via ACF */
-      $img_url = $image['url'];
-      $img_alt = $image['alt'];
-      $img_sm = $image['sizes'][ 'thumbnail' ];
-      $img_md = $image['sizes'][ 'medium' ];
-      $img_lg = $image['sizes'][ 'large' ];
-      $img_xl = $image[ 'url' ];
-
-      $srcset = $img_sm . " 768w, " . $img_md . " 992w, " . $img_lg . " 1024w, " . $img_xl . " 1200w";
-    ?>
-  	<figure class="welcome jumbotron">
-  		<img  src="<?php echo $img_url; ?>"
-            sizes="100vw" 
-  					srcset="<?php echo $srcset; ?>" 
-  					alt="<?php echo $img_alt; ?>" >
-  		<image src="img/design_logo.svg" class="logo">
-  		<figcaption class="blurb">
-  			<h6><?php the_field('jumbotron_title'); ?></h6>
-  			<p><?php the_field('jumbotron_text'); ?></p>
-  		</figcaption>
-  	</figure>
-      
+          
     <section class="info jumbotron">
 
     	<?php $image = get_field('home_information_image');
@@ -48,8 +28,8 @@ get_header(); ?>
     <div class="imagePanner">
       <div class="panning">
       <div class="focuspoint"
-          data-focus-x="0.23"
-          data-focus-y="0.049"
+          data-focus-x="0"
+          data-focus-y="0"
           data-image-w="2000"
           data-image-h="1000">
       	<img  sizes="100vw" 
@@ -82,8 +62,8 @@ get_header(); ?>
     	<div class="imagePanner">
       <div class="panning">
       <div class="focuspoint"
-          data-focus-x="0.23"
-          data-focus-y="0.049"
+          data-focus-x="0"
+          data-focus-y="0"
           data-image-w="2000"
           data-image-h="1000">
         <img  sizes="100vw" 
@@ -115,8 +95,8 @@ get_header(); ?>
   	<div class="imagePanner">
       <div class="panning">
       <div class="focuspoint"
-          data-focus-x="0.23"
-          data-focus-y="0.049"
+          data-focus-x="0"
+          data-focus-y="0"
           data-image-w="2000"
           data-image-h="1000">
         <img  sizes="100vw" 

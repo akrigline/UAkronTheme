@@ -20,7 +20,7 @@
       $focus_y = get_field('focux_y');
     ?>
 
-    <figure class="pageHeader jumbotron">
+    <figure class="pageHeader">
       
       <div class="focuspoint"
           data-focus-x="<?php echo $focus_x; ?>"
