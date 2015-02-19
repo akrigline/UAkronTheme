@@ -21,7 +21,7 @@ get_header(); ?>
       $srcset = $img_sm . " 768w, " . $img_md . " 992w, " . $img_lg . " 1024w, " . $img_xl . " 1200w";
 
       /* Get Focuspoint data for the Image */
-      $focus_width = $image['sizes']['thumbanil-width'];
+      $focus_width = $image['sizes']['thumbnail-width'];
       $focus_height = $image['sizes']['thumbnail-height'];
       
       $focus_x = get_field('focux_x');
