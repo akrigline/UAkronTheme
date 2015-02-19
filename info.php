@@ -13,7 +13,7 @@ get_header(); ?>
 	$img_sm = $image['sizes'][ 'thumbnail' ];
 	$img_md = $image['sizes'][ 'medium' ];
 	$img_lg = $image['sizes'][ 'large' ];
-	$img_xl = $image['sizes'][ 'original' ];
+	$img_xl = $image['url'];
 
   $srcset = $img_sm . " 768w, " . $img_md . " 992w, " . $img_lg . " 1024w, " . $img_xl . " 1200w";
 	?>
