@@ -1,6 +1,10 @@
 <?php /* Template Name: Events Page */  ?>
 
-<?php get_header(); ?>
+<?php
+/**
+ * @package UAkronDesign
+ */
+get_header(); ?>
 
 <?php if ( have_posts() ) : ?>
   <?php while ( have_posts() ) : the_post(); ?>
