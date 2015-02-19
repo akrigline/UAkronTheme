@@ -6,37 +6,8 @@
  */
 get_header(); ?>
 
-  <?php $image = get_field('jumbotron_image');
-	/* Declare Variables for Images via ACF */
-	$img_url = $image['url'];
-	$img_alt = $image['alt'];
-	$img_sm = $image['sizes'][ 'thumbnail' ];
-	$img_md = $image['sizes'][ 'medium' ];
-	$img_lg = $image['sizes'][ 'large' ];
-	$img_xl = $image['url'];
 
-  $srcset = $img_sm . " 768w, " . $img_md . " 992w, " . $img_lg . " 1024w, " . $img_xl . " 1200w";
-	?>
-
-
-<?php if ( have_posts() ) : ?>
-  <?php while ( have_posts() ) : the_post(); ?>
-    <?php $image = get_field('jumbotron_image'); ?>
-  	<figure class="pageHeader jumbotron">
-  		<img  size="100vw" 
-  					srcset="<?php echo $srcset; ?>" 
-  					alt="<?php echo $img_alt; ?>" >
-  		<image src="img/design_logo.svg" class="logo">
-  		<figcaption class="blurb">
-  			<h6><?php the_field('jumbotron_title'); ?></h6>
-  			<p><?php the_field('jumbotron_text'); ?></p>
-  		</figcaption>
-  	</figure>
-  <?php endwhile; ?>
-
-<?php else : ?>
-
-<?php endif; ?>
+<?php get_template_part( 'content', 'jumbotron' ); ?>
 
 <section>
 <div class="container">
