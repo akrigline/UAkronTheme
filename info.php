@@ -6,9 +6,8 @@
  */
 get_header(); ?>
 
-<?php
-/* Declare Variables for Images via ACF */
-	$image;
+  <?php $image = get_field('jumbotron_image');
+	/* Declare Variables for Images via ACF */
 	$img_url = $image['url'];
 	$img_alt = $image['alt'];
 	$img_sm = $image['sizes'][ 'thumbnail' ];
