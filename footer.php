@@ -9,13 +9,13 @@
   <div class="pseudofooter"></div>
   <footer>
     <div class="container">
-      <address class="col-xs-12 col-sm-3 col-xl-3">
+      <div class="col-xs-12 col-sm-3">
         <p>Myers School of Art<br>
         150 E Exchange St.<br>
         University of Akron Folk Hall<br>
         Akron, OH 44325</p>
-      </address>
-      <div class="col-xs-12 col-sm-5 col-xl-3">
+      </div>
+      <div class="col-xs-12 col-sm-5">
         <p>
           Contact Info:<br>
           330.972.6030<br>
@@ -26,13 +26,14 @@
           <a href="https://www.uakron.edu/development/"> Support Myers </a>
         </p>
       </div>
-      <div class="col-xs-12 col-sm-4 col-xl-3">
+      <div class="col-xs-12 col-sm-4">
         <a href="http://uakron.edu"><img src="<?php bloginfo('template_directory'); ?>/img/uakron_logo.svg" class="uaLogo" alt=""></a>
         <small>The University of Akron is an Equal Education and Emploment Institution. &copy; 2015</small>
       </div>
     </div>
   </footer>
-    
+
+
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
 

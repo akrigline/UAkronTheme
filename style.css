@@ -353,13 +353,13 @@ figcaption h6 {
 /*--------------------------
 INFO PAGE 
 -----------*/
-.page {
+.info {
   height:60%;
   width: 100%;
   position: relative;
 }
 
-.page h4 {
+.info h4 {
   padding:2em;
   font-size:3em;
   font-weight: 500;
@@ -369,7 +369,7 @@ INFO PAGE
   position: absolute;
 }
 
-.page img {
+.info img {
   min-height: 100%;
   min-width: 100%;
 }
