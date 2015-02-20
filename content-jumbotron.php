@@ -32,7 +32,7 @@
               alt="<?php echo $img_alt; ?>" >
       </div>
       <figcaption class="blurb">
-        <h6><?php the_field('jumbotron_title'); ?></h6>
+        <h6><?php the_field('jumbotron_header'); ?></h6>
         <p><?php the_field('jumbotron_text'); ?></p>
       </figcaption>
     </figure>
