@@ -546,7 +546,7 @@ textarea:focus {
     position: absolute;
     text-transform: uppercase;
   }
- .blurb {
+ .pageHeader .blurb {
     left:0;
   }
 }
