@@ -132,7 +132,7 @@ if (document.getElementById('homeHeader')){
       });
     });
 
-  $('#stickyNav').sticky({topSpacing:0});
+  $('#stickyNav').sticky({topSpacing:0, getWidthFrom:'#homeHeader', responsiveWidth:true});
 
 };
 
