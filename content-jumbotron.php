@@ -16,8 +16,8 @@
       $focus_width = $image['sizes']['thumbnail-width'];
       $focus_height = $image['sizes']['thumbnail-height'];
       
-      $focus_x = get_field('focux_x');
-      $focus_y = get_field('focux_y');
+      $focus_x = get_field('focus_x');
+      $focus_y = get_field('focus_y');
 
       /* Get Jumbotron Text */
       $header = get_field('jumbotron_header');

@@ -11,7 +11,6 @@ get_header(); ?>
   <section class="container-fluid">
 
   <?php $year = date('Y');
-  echo $year;
     while ($year >= 2012) : ?>
 
         
@@ -20,7 +19,11 @@ get_header(); ?>
   <div class="col-xs-12 col-md-9">
     <div class="row">
 
-      <?php query_posts('category_name=events-adv&posts_per_page=1&year=$year'); ?>
+      <?php /* Get the Post from the Advanced Graphic Design Show Category within this year's loop */ ?>
+      <?php query_posts( array(
+        'category_name' => 'events-adv',
+        'posts_per_page' => 1,
+        'year' => $year ) ); ?>
       <?php if ( have_posts() ) : ?>
         <?php while ( have_posts() ) : the_post(); ?>
           <figure class="event col-xs-6">
@@ -52,9 +55,11 @@ get_header(); ?>
       <?php endif; ?>
       <?php wp_reset_query(); ?>
 
-
       <?php /* Get the Post from the Senior Show Category within this year's loop */ ?>
-      <?php query_posts('category_name=events-senior&posts_per_page=1&year=$year'); ?>
+      <?php query_posts( array(
+        'category_name' => 'events-senior',
+        'posts_per_page' => 1,
+        'year' => $year ) ); ?>
       <?php if ( have_posts() ) : ?>
         <?php while ( have_posts() ) : the_post(); ?>
           <figure class="event col-xs-6">
@@ -88,10 +93,13 @@ get_header(); ?>
 
     </div>
   </div><!-- main events -->
-  <div class="col-xs-12 col-md-3">
+  <div class="col-xs-12 col-md-3 events-other">
     <h3>Other Events</h3>
     <?php /* Get the Posts from the Other Events Category within this year's loop */ ?>
-    <?php query_posts('category_name=events-other&posts_per_page=3&year=$year'); ?>
+    <?php query_posts( array(
+        'category_name' => 'events-other',
+        'posts_per_page' => 1,
+        'year' => $year ) ); ?>
     <?php if ( have_posts() ) : ?>
       <dl>
         <?php while ( have_posts() ) : the_post(); ?>

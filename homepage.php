@@ -24,14 +24,21 @@ get_header(); ?>
         $img_xl = $image[ 'url' ];
 
         $srcset = $img_sm . " 768w, " . $img_md . " 992w, " . $img_lg . " 1024w, " . $img_xl . " 1200w";
+
+        /* Get Focuspoint data for the Image */
+        $focus_width = $image['sizes']['thumbnail-width'];
+        $focus_height = $image['sizes']['thumbnail-height'];
+        
+        $focus_x = get_field('focux_x_info');
+        $focus_y = get_field('focux_y_info');
       ?>
     <div class="imagePanner">
       <div class="panning">
       <div class="focuspoint"
-          data-focus-x="0"
-          data-focus-y="0"
-          data-image-w="2000"
-          data-image-h="1000">
+          data-focus-x="<?php echo $focus_x; ?>"
+          data-focus-y="<?php echo $focus_y; ?>"
+          data-image-w="<?php echo $focus_width; ?>"
+          data-image-h="<?php echo $focus_height; ?>">
       	<img  sizes="100vw" 
       				srcset="<?php echo $srcset; ?>" 
       				alt="<?php echo $img_alt; ?>" >
@@ -58,14 +65,21 @@ get_header(); ?>
         $img_xl = $image[ 'url' ];
 
         $srcset = $img_sm . " 768w, " . $img_md . " 992w, " . $img_lg . " 1024w, " . $img_xl . " 1200w";
+
+        /* Get Focuspoint data for the Image */
+        $focus_width = $image['sizes']['thumbnail-width'];
+        $focus_height = $image['sizes']['thumbnail-height'];
+        
+        $focus_x = get_field('focux_x_events');
+        $focus_y = get_field('focux_y_events');
       ?>
     	<div class="imagePanner">
       <div class="panning">
       <div class="focuspoint"
-          data-focus-x="0"
-          data-focus-y="0"
-          data-image-w="2000"
-          data-image-h="1000">
+          data-focus-x="<?php echo $focus_x; ?>"
+          data-focus-y="<?php echo $focus_y; ?>"
+          data-image-w="<?php echo $focus_width; ?>"
+          data-image-h="<?php echo $focus_height; ?>">
         <img  sizes="100vw" 
               srcset="<?php echo $srcset; ?>" 
               alt="<?php echo $img_alt; ?>" >
@@ -91,14 +105,21 @@ get_header(); ?>
         $img_xl = $image[ 'url' ];
 
         $srcset = $img_sm . " 768w, " . $img_md . " 992w, " . $img_lg . " 1024w, " . $img_xl . " 1200w";
+
+        /* Get Focuspoint data for the Image */
+        $focus_width = $image['sizes']['thumbnail-width'];
+        $focus_height = $image['sizes']['thumbnail-height'];
+        
+        $focus_x = get_field('focux_x_contact');
+        $focus_y = get_field('focux_y_contact');
       ?>
   	<div class="imagePanner">
       <div class="panning">
       <div class="focuspoint"
-          data-focus-x="0"
-          data-focus-y="0"
-          data-image-w="2000"
-          data-image-h="1000">
+          data-focus-x="<?php echo $focus_x; ?>"
+          data-focus-y="<?php echo $focus_y; ?>"
+          data-image-w="<?php echo $focus_width; ?>"
+          data-image-h="<?php echo $focus_height; ?>">
         <img  sizes="100vw" 
               srcset="<?php echo $srcset; ?>" 
               alt="<?php echo $img_alt; ?>" >
