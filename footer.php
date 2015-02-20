@@ -41,7 +41,7 @@
   <script src="<?php bloginfo('template_directory'); ?>/js/jquery.easing.1.3.js"></script>
   <script src="<?php bloginfo('template_directory'); ?>/js/vendor/bootstrap.min.js"></script>
   <script src="<?php bloginfo('template_directory'); ?>/js/vendor/jquery.focuspoint.js"></script>
-
+  <script src="<?php bloginfo('template_directory'); ?>/js/vendor/jquery.sticky.js"></script>
   <script src="<?php bloginfo('template_directory'); ?>/js/main.js"></script>
 
   <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
