@@ -530,7 +530,7 @@ textarea:focus {
 }
 
 
-@media screen and (min-width:768px){
+@media screen and (max-width:768px){
   .event,
   .embed-responsive{
     padding-top:25%;
@@ -546,7 +546,7 @@ textarea:focus {
     position: absolute;
     text-transform: uppercase;
   }
-  .section.jumbotron .blurb, .pageHeader .blurb {
+ .blurb {
     left:0;
   }
 }
@@ -571,7 +571,7 @@ textarea:focus {
   }
 
   .blurb h4 {
-    font-size: 4em;
+    font-size: 2em;
     text-align: center;
   }
 
