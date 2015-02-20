@@ -247,6 +247,15 @@ nav a:hover {
 /*--------------------------
 HOME PAGE 
 -----------*/
+.homeHeader{
+  background-color:#333;
+}
+.homeHeader img{
+  width:120%;
+  margin-left:-10%;
+}
+
+
 .pageHeader {
   height:60%;
   width: 100%;

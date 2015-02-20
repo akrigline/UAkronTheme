@@ -6,9 +6,6 @@
  */
 get_header(); ?>
 
-
-<?php get_template_part( 'content', 'jumbotron' ); ?>
-
 <?php if ( have_posts() ) : ?>
   <?php while ( have_posts() ) : the_post(); ?>
           
