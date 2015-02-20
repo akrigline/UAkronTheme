@@ -536,9 +536,10 @@ textarea:focus {
     padding-top:25%;
   }
 
-  .pageHeader h1 {
+  .pageHeader h4 {
     text-align: center;
     font-size:2em;
+    margin: 0;
   }
 }
 
