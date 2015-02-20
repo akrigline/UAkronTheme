@@ -468,6 +468,7 @@ h2{
   text-align:center;
   background:#fff;
   color:#000;
+  margin-bottom: 0;
 }
 
 .event{
@@ -505,7 +506,7 @@ h2{
 }
 
 .event-row{
-  background-color:#000;
+  background-color:#666;
   color:#fff;
 }
 
