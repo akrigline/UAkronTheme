@@ -26,14 +26,11 @@ get_header(); ?>
   </div><!-- container -->
 </section>
 
-
-  
   <section>
-  <div class="embed-responsive">
-
-    <div class="overlay" onClick="style.pointerEvents='none'"></div>
-    <iframe class="embed-responsive-item" src='https://www.google.com/maps/embed/v1/place?key=AIzaSyCFZQmZgdQRBefx_vYB7OdpurZcAw4PkSw&q=Folk+Hall,Akron+Ohio'></iframe>
-  </div>
+    <div class="embed-responsive">
+      <div class="overlay" onClick="style.pointerEvents='none'"></div>
+      <iframe class="embed-responsive-item" src='https://www.google.com/maps/embed/v1/place?key=AIzaSyCFZQmZgdQRBefx_vYB7OdpurZcAw4PkSw&q=Folk+Hall,Akron+Ohio'></iframe>
+    </div>
   </section>
   
 <?php get_footer(); ?>
