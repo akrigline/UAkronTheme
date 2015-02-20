@@ -562,7 +562,7 @@ textarea:focus {
     padding-left:0;
   }
 
-  .blurb h4, .page h4 {
+  .blurb h4 {
     font-size: 4em;
     text-align: center;
   }
