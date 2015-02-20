@@ -44,7 +44,7 @@
 <body <?php body_class(); ?>>
 
 	<?php if ( is_front_page() ) : ?>
-		<header id="homeHeader">
+		<header id="homeHeader" class="background-1">
 			<img src="<?php bloginfo('template_directory'); ?>/img/design_logo.svg">
 		</header>
 		<div class="nav" id="stickyNav">

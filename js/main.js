@@ -131,8 +131,9 @@ if (document.getElementById('homeHeader')){
         });
       });
     });
-    
+
   $('#stickyNav').sticky({topSpacing:0});
+
 };
 
 $(window).resize(function() {
