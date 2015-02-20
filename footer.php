@@ -39,6 +39,7 @@
 
 
   <script src="<?php bloginfo('template_directory'); ?>/js/jquery.easing.1.3.js"></script>
+  <script src="<?php bloginfo('template_directory'); ?>/js/vendor/odometer.js"></script>
   <script src="<?php bloginfo('template_directory'); ?>/js/vendor/bootstrap.min.js"></script>
   <script src="<?php bloginfo('template_directory'); ?>/js/vendor/jquery.focuspoint.js"></script>
 

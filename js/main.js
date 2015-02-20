@@ -1,4 +1,4 @@
-if (document.getElementByClassName('quickStats')){
+if (document.getElementsByClassName('quickStats')){
 
   var el = document.querySelector('.rate');
 	od1 = new Odometer({
