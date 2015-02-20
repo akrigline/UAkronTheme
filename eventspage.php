@@ -14,7 +14,7 @@ get_header(); ?>
     while ($year >= 2012) : ?>
 
         
-<div class="row">
+<div class="row event-row">
   <h2><?php echo $year; ?></h2>
   <div class="col-xs-12 col-md-9">
     <div class="row">

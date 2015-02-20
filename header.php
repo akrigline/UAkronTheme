@@ -63,7 +63,7 @@
 					</button>
 				</div>
 
-				<div class="pull-right brand"><a href="index.html"><img src="<?php bloginfo('template_directory'); ?>/img/design_logo.svg"></a></div>
+				<div class="pull-right brand"><a href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo('template_directory'); ?>/img/design_logo.svg"></a></div>
 
 				<!-- Collect the nav links, forms, and other content for toggling -->
 					<?php wp_nav_menu( 

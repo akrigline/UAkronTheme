@@ -466,6 +466,8 @@ EVENTS PAGE
 
 h2{
   text-align:center;
+  background:#fff;
+  color:#000;
 }
 
 .event{
@@ -499,6 +501,11 @@ h2{
 }
 
 .event p{
+  color:#fff;
+}
+
+.event-row{
+  background-color:#000;
   color:#fff;
 }
 
@@ -606,7 +613,9 @@ textarea:focus {
 }
 
 @media screen and (min-width:768px) {
-  .event,
+  .event{
+    padding-top: 50%;
+  }
   .embed-responsive{
     padding-top:25%;
   }
