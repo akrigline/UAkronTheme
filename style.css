@@ -326,7 +326,8 @@ figcaption {
   box-shadow: rgba(0, 0, 0, 0.498039) 3px 3px 20px;
 }
 
-.jumbotron .blurb{
+.jumbotron .blurb,
+.pageHeader .blurb{
 position: absolute;
 }
 
@@ -334,7 +335,8 @@ position: absolute;
   text-align: left;
 }
 
-section.jumbotron .blurb {
+section.jumbotron .blurb,
+.pageHeader .blurb {
   bottom:10em;
   left: 5em;
 }
