@@ -248,11 +248,19 @@ nav a:hover {
 HOME PAGE 
 -----------*/
 .homeHeader{
-  background-color:#333;
+  background:url(img/07t2mb2.gif);
+  position:relative;
+  height:60%;
+  width:100%;
 }
 .homeHeader img{
-  width:120%;
-  margin-left:-10%;
+  position: absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  width: 90%;
+  margin: auto;
 }
 
 

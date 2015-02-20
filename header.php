@@ -44,14 +44,13 @@
 <body <?php body_class(); ?>>
 
 	<?php if ( is_front_page() ) : ?>
-	  
-	<header class="pageHeader homeHeader">
-		<img src="<?php bloginfo('template_directory'); ?>/img/design_logo.svg">
-	</header>
-
+		<header class="homeHeader">
+			<img src="<?php bloginfo('template_directory'); ?>/img/design_logo.svg">
+		</header>
+		<div class="nav stickyNav">
+	<?php else : ?>
+		<div class="nav">
 	<?php endif; ?>
-
-	<div class="nav">
 		<nav class="navbar top-nav" role="navigation">
 			<div class="container-fluid">
 				<!-- Brand and toggle get grouped for better mobile display -->
