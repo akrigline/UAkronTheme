@@ -535,6 +535,11 @@ textarea:focus {
   .embed-responsive{
     padding-top:25%;
   }
+
+  .pageHeader h1 {
+    text-align: center;
+    font-size:2em;
+  }
 }
 
 
