@@ -6,7 +6,6 @@
  */
 ?>
   
-  <div class="pseudofooter"></div>
   <footer>
     <div class="container">
       <div class="col-xs-12 col-sm-3">
@@ -32,6 +31,7 @@
       </div>
     </div>
   </footer>
+  <div class="pseudofooter"></div>
 
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
