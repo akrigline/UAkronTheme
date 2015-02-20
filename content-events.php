@@ -70,7 +70,11 @@
 	      	<dt><?php the_title(); ?></dt>
 		      <dd>
 		      	<?php the_field('event_date_open'); ?>
-		      	<?php if ( get_field('event_date_close') ) : echo " - " . the_field('event_date_close'); ?>
+		      	<?php if ( get_field('event_date_close') ) : ?>
+              
+              <?php echo " - " . get_field('event_date_close'); ?>
+
+            <?php endif; ?>
 		      </dd>
 	      <?php endwhile; ?>
       </dl>

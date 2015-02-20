@@ -39,7 +39,7 @@ get_header(); ?>
       </div>
     </div>
 
-    	<a href="<?php get_permalink( get_page_by_path( 'program-information' ) ); ?>">
+    	<a href="<?php echo get_permalink( 9 ); ?>">
     		<div class="blurb info col-xs-12 col-sm-6 col-md-4">
     			<h4 class="titles"><?php the_field('home_information_title'); ?></h4>
     			<p><?php the_field('home_information_text'); ?></p>
@@ -72,7 +72,7 @@ get_header(); ?>
       </div>
       </div>
     </div>
-    	<a href="<?php get_permalink( get_page_by_path( 'events' ) ); ?>">
+    	<a href="<?php echo get_permalink( 7 ); ?>">
     		<div class="blurb events col-xs-12 col-sm-6 col-md-4">
     			<h4 class="titles"><?php the_field('home_events_title'); ?></h4>
     			<p><?php the_field('home_events_text'); ?></p>
@@ -105,7 +105,7 @@ get_header(); ?>
       </div>
       </div>
     </div>
-    	<a href="<?php get_permalink( get_page_by_path( 'contact-us' ) ); ?>">
+    	<a href="<?php echo get_permalink( 11 ); ?>">
     		<div class="blurb contact col-xs-12 col-sm-6 col-md-4">
     			<h4 class="titles"><?php the_field('home_contact_title'); ?></h4>
     			<p><?php the_field('home_contact_text'); ?></p>

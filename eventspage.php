@@ -11,11 +11,11 @@ get_header(); ?>
   <section class="container-fluid">
 
   <?php $year = date('Y');
-    while ($year >= 2012) : ?>
+    while ($year > 2012) : ?>
 
         <?php get_template_part( 'content', 'events' ); ?>
 
-        $year--;
+        <?php $year--; ?>
 
   <?php endwhile; ?>
 

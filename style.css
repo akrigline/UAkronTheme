@@ -498,7 +498,7 @@ input {
   width: 90%;
 }
 
-input [type="submit"] {
+input[type="submit"] {
   color: #FFF;
   background-color: #7DC247;
   margin-bottom:.6em;
@@ -507,6 +507,7 @@ input [type="submit"] {
 input:focus {
   border: 1px solid #7DC247;   
   box-shadow: 0 1px 1px #7DC247 !important;
+  outline:none;
 }
 
 textarea {
@@ -523,6 +524,7 @@ textarea {
 textarea:focus {
   border: 1px solid #7DC247;
   box-shadow: 0 1px 1px #7DC247 !important;
+  outline:none;
 }
 
 
