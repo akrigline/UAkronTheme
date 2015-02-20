@@ -44,10 +44,10 @@
 <body <?php body_class(); ?>>
 
 	<?php if ( is_front_page() ) : ?>
-		<header class="homeHeader">
+		<header id="homeHeader">
 			<img src="<?php bloginfo('template_directory'); ?>/img/design_logo.svg">
 		</header>
-		<div class="nav stickyNav">
+		<div class="nav" id="stickyNav">
 	<?php else : ?>
 		<div class="nav">
 	<?php endif; ?>

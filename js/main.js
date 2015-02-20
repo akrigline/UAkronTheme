@@ -1,4 +1,4 @@
-if (document.getElementsByClassName('quickStats')){
+if (document.getElementById('info')){
 
   var el = document.querySelector('.rate');
 	od1 = new Odometer({
@@ -63,7 +63,7 @@ if (document.getElementsByClassName('quickStats')){
 	}, 1800 );
 };
 
-if (document.getElementsById('homeHeader')){
+if (document.getElementById('homeHeader')){
     $(window).load(function() {
       $imagePan_panning=$(".jumbotron .panning");
       $imagePan=$(".jumbotron");
@@ -130,10 +130,9 @@ if (document.getElementsById('homeHeader')){
             MouseMove(event);
         });
       });
-      
-      $('.stickme').sticky({topSpacing:0});
-
     });
+    
+  $('#stickyNav').sticky({topSpacing:0});
 };
 
 $(window).resize(function() {

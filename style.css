@@ -247,13 +247,13 @@ nav a:hover {
 /*--------------------------
 HOME PAGE 
 -----------*/
-.homeHeader{
+#homeHeader{
   background:url(img/07t2mb2.gif);
   position:relative;
   height:60%;
   width:100%;
 }
-.homeHeader img{
+#homeHeader img{
   position: absolute;
   top:0;
   bottom:0;
