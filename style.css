@@ -259,6 +259,7 @@ HOME PAGE
   text-align: left;
   margin-top:-7.4em;
   position: absolute;
+  text-transform: uppercase;
 }
 
 .pageHeader img {
