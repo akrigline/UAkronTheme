@@ -37,8 +37,7 @@
               alt="<?php echo $img_alt; ?>" >
       </div>
       <figcaption class="blurb">
-        <h6><?php echo $header; ?></h6>
-        <p><?php echo $blurb; ?></p>
+        <h4><?php echo $header; ?></h4>
       </figcaption>
     </figure>
 
