@@ -29,8 +29,8 @@ get_header(); ?>
         $focus_width = $image['sizes']['thumbnail-width'];
         $focus_height = $image['sizes']['thumbnail-height'];
         
-        $focus_x = get_field('focux_x_info');
-        $focus_y = get_field('focux_y_info');
+        $focus_x = get_field('focus_x_info');
+        $focus_y = get_field('focus_y_info');
       ?>
     <div class="imagePanner">
       <div class="panning">
@@ -70,8 +70,8 @@ get_header(); ?>
         $focus_width = $image['sizes']['thumbnail-width'];
         $focus_height = $image['sizes']['thumbnail-height'];
         
-        $focus_x = get_field('focux_x_events');
-        $focus_y = get_field('focux_y_events');
+        $focus_x = get_field('focus_x_events');
+        $focus_y = get_field('focus_y_events');
       ?>
     	<div class="imagePanner">
       <div class="panning">
@@ -110,8 +110,8 @@ get_header(); ?>
         $focus_width = $image['sizes']['thumbnail-width'];
         $focus_height = $image['sizes']['thumbnail-height'];
         
-        $focus_x = get_field('focux_x_contact');
-        $focus_y = get_field('focux_y_contact');
+        $focus_x = get_field('focus_x_contact');
+        $focus_y = get_field('focus_y_contact');
       ?>
   	<div class="imagePanner">
       <div class="panning">
