@@ -7,11 +7,7 @@
 ?>
 
 <div class="col-xs-12 col-sm-6 form">
-  <form>
-
-    <?php do_shortcode('[contact-form-7 id="21" title="Contact form 1"]'); ?>
-
-  </form>
+    <?php echo do_shortcode('[contact-form-7 id="21" title="Contact form 1"]'); ?>
 </div>
 <div class="col-xs-12 col-sm-6">
   <div class="contactContent">
