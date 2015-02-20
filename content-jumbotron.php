@@ -18,6 +18,11 @@
       
       $focus_x = get_field('focux_x');
       $focus_y = get_field('focux_y');
+
+      /* Get Jumbotron Text */
+      $header = get_field('jumbotron_header');
+      $blurb = get_field('jumbotron_text');
+
     ?>
 
     <figure class="pageHeader">
@@ -32,8 +37,8 @@
               alt="<?php echo $img_alt; ?>" >
       </div>
       <figcaption class="blurb">
-        <h6><?php the_field('jumbotron_header'); ?></h6>
-        <p><?php the_field('jumbotron_text'); ?></p>
+        <h6><?php echo $header; ?></h6>
+        <p><?php echo $blurb; ?></p>
       </figcaption>
     </figure>
 

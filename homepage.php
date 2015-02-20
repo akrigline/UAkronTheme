@@ -39,7 +39,7 @@ get_header(); ?>
       </div>
     </div>
 
-    	<a href="info.html">
+    	<a href="<?php the_permalink(); ?>">
     		<div class="blurb info col-xs-12 col-sm-6 col-md-4">
     			<h4 class="titles"><?php the_field('home_information_title'); ?></h4>
     			<p><?php the_field('home_information_text'); ?></p>
@@ -72,7 +72,7 @@ get_header(); ?>
       </div>
       </div>
     </div>
-    	<a href="events.html">
+    	<a href="<?php the_permalink(); ?>">
     		<div class="blurb events col-xs-12 col-sm-6 col-md-4">
     			<h4 class="titles"><?php the_field('home_events_title'); ?></h4>
     			<p><?php the_field('home_events_text'); ?></p>
@@ -105,7 +105,7 @@ get_header(); ?>
       </div>
       </div>
     </div>
-    	<a href="contact.html">
+    	<a href="<?php the_permalink(); ?>">
     		<div class="blurb contact col-xs-12 col-sm-6 col-md-4">
     			<h4 class="titles"><?php the_field('home_contact_title'); ?></h4>
     			<p><?php the_field('home_contact_text'); ?></p>
