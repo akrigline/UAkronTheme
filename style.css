@@ -501,6 +501,7 @@ input {
 input [type="submit"] {
   color: #FFF;
   background-color: #7DC247;
+  margin-bottom:.6em;
 }
 
 input:focus {
