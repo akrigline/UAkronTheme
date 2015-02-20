@@ -476,13 +476,27 @@ CONTACT PAGE
 }
 
 .form h1{
-  font-size: 2.4em;
+  font-size: 1.6em;
   font-weight: 400;
   color: #7DC247;
   padding-top: .2em;
   padding-bottom: .2em;
   border-bottom: 1px solid #7DC247;
 }
+
+input {
+  color: #000;
+  font-size: .8em;
+  border: none;
+  font-weight: 300;
+  margin-top: .6em;
+  width: 90%;
+}
+
+input:focus {
+  border: 1px solid #7DC247;
+}
+
 
 @media screen and (min-width:768px){
   .event,
